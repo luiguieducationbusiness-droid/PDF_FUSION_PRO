@@ -16,7 +16,7 @@
     :root{--bg:#070b14;--panel:#0e1524;--panel2:#111b2e;--line:#24324a;--text:#f5f7fb;--muted:#91a0b8;--accent:#6d7cff;--accent2:#38d6c0;--danger:#ff667a;--shadow:0 20px 60px #0008}
     *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0%,#172448 0,#070b14 38%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;min-height:100vh}
     button,input{font:inherit}.app{max-width:1250px;margin:auto;padding:22px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px}
-    .brand{display:flex;align-items:center;gap:12px}.logo{width:46px;height:46px;border:1px solid #ffffff20;border-radius:14px;background:linear-gradient(135deg,#6977ff,#37d6bf);display:grid;place-items:center;font-weight:900;color:#06101b;box-shadow:0 10px 35px #586bff40}.brand h1{font-size:20px;margin:0}.brand small{color:var(--muted)}
+    .brand{display:flex;align-items:center;gap:12px}.logo{width:46px;height:46px;border-radius:14px;object-fit:cover;box-shadow:0 10px 35px #586bff40}.brand h1{font-size:20px;margin:0}.brand small{color:var(--muted)}
     .install{border:1px solid #ffffff1c;background:#ffffff0b;color:var(--text);padding:10px 15px;border-radius:11px;cursor:pointer;display:none}.install:hover{background:#ffffff14}
     .hero{background:linear-gradient(145deg,#111a2cdd,#0b1220ee);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--shadow);margin-bottom:18px}.hero h2{margin:0 0 8px;font-size:clamp(25px,4vw,38px)}.hero p{margin:0;color:var(--muted);max-width:760px;line-height:1.6}
     .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}.tab{border:1px solid var(--line);background:#ffffff06;color:#c9d3e6;padding:11px 14px;border-radius:11px;cursor:pointer}.tab.active{background:#6878ff22;border-color:#7180ff;color:white}
@@ -33,7 +33,7 @@
 <body>
 <div class="app">
   <header class="topbar">
-    <div class="brand"><div class="logo">PDF</div><div><h1>PDF Fusion Studio</h1><small>Conversión y combinación local</small></div></div>
+    <div class="brand"><img class="logo" src="icons/icon.svg" alt=""><div><h1>PDF Fusion Studio</h1><small>Conversión y combinación local</small></div></div>
     <button id="installBtn" class="install">Instalar aplicación</button>
   </header>
 
